@@ -1,0 +1,133 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-color: var(--Violet);
+    color: #fff;
+    padding: 40px;
+    gap: 70px;
+}
+
+
+@media (max-width:768px) {
+    body {
+        padding: 40px 20px;
+    }
+}
+
+header {
+    align-self: flex-start;
+}
+
+header img {
+    max-width: 200px;
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    align-self: center;
+}
+
+main .image {
+    flex-basis: 50%;
+}
+
+main img {
+    max-width: 100%;
+}
+
+main .info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+    flex-basis: 50%;
+}
+
+main .info p {
+    line-height: 1.5;
+}
+
+main .info button {
+    border: none;
+    background-color: #fff;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    color: var(--Violet);
+    font-weight: 500;
+    transition: .5s linear;
+}
+
+main .info button:hover {
+    background-color: var(--Magenta);
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    main .info {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+footer {
+    align-self: flex-end;
+}
+footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social i {
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.6px solid #fff;
+    transition: .5s linear;
+}
+
+footer .social i:hover {
+    color: var(--Magenta);
+    border-color: var(--Magenta);
+}
+
+@media (max-width: 767px) {
+    footer {
+        align-self: center;
+    }
+}
