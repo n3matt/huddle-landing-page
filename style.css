@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
 :root {
     --Violet: hsl(257, 40%, 49%);
     --Magenta: hsl(300, 69%, 71%);
@@ -19,13 +21,15 @@ body {
     background-color: var(--Violet);
     color: #fff;
     padding: 55px;
+    padding-bottom: 30px;
     gap: 75px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
-@media (max-width:768px) {
+@media (max-width: 767px) {
     body {
-        padding: 50px 25px;
+        padding: 25px;
     }
 }
 
@@ -64,8 +68,12 @@ main .info {
     flex-basis: 40%;
 }
 
+main .info h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
 main .info p {
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 main .info button {
@@ -78,6 +86,7 @@ main .info button {
     color: var(--Violet);
     font-weight: 500;
     transition: .5s linear;
+    font-family: 'Poppins', sans-serif;
 }
 
 main .info button:hover {
