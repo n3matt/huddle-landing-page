@@ -18,14 +18,14 @@ body {
     background-size: cover;
     background-color: var(--Violet);
     color: #fff;
-    padding: 40px;
-    gap: 70px;
+    padding: 55px;
+    gap: 75px;
 }
 
 
 @media (max-width:768px) {
     body {
-        padding: 40px 20px;
+        padding: 50px 25px;
     }
 }
 
@@ -48,7 +48,7 @@ main {
 }
 
 main .image {
-    flex-basis: 50%;
+    flex-basis: 60%;
 }
 
 main img {
@@ -60,7 +60,8 @@ main .info {
     justify-content: space-between;
     flex-direction: column;
     gap: 40px;
-    flex-basis: 50%;
+    padding: 20px;
+    flex-basis: 40%;
 }
 
 main .info p {
