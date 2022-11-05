@@ -98,6 +98,16 @@ main .info button:hover {
 }
 
 
+@media (max-width: 1024px) {
+    body {
+        gap: 50px;
+    }
+    main .info,
+    main .image {
+        flex-basis: 50%;
+    }
+}
+
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -143,5 +153,8 @@ footer .social i:hover {
 @media (max-width: 767px) {
     footer {
         align-self: center;
+    }
+    footer .social {
+        gap: 30px;
     }
 }
